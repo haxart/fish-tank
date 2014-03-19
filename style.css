@@ -1,3 +1,31 @@
+/*CSS Keyframes*/
+
+/*X-Axis Movement*/
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 750px; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 750px; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 750px; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 750px; }
+}
+/*Y-Axis Movement*/
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 450px; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 450px; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 450px; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 450px; }
+}
 /*Styles*/
 .container {
 	width:800px;
