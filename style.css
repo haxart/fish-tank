@@ -47,4 +47,20 @@
 	display:block;
 	background-color:transparent;
 	position:absolute;
+	/*animations*/
+	-webkit-animation:
+	moveX 5s linear 0.4s infinite alternate,
+	moveY 10s linear 0s infinite alternate;
+	
+	-moz-animation: 
+	moveX 5s linear 0.4s infinite alternate,
+	moveY 10s linear 0s infinite alternate;
+
+	-o-animation:
+	moveX 5s linear 0.4s infinite alternate,
+	moveY 10s linear 0s infinite alternate;
+
+	animation:
+	moveX 5s linear 0.4s infinite alternate,
+	moveY 10s linear 0s infinite alternate;
 }
