@@ -63,7 +63,6 @@
 #fish {
 	width:50px;
 	height:50px;
-	background-image: url('http://www.gettyicons.com/download/?id=5242&t=png&s=64');
 	background-size:100%;
 	display:block;
 	background-color:transparent;
@@ -91,6 +90,10 @@
 	animation:
 	moveX 6s linear 0.4s infinite alternate,
 	moveY 10s linear 0s infinite alternate;
+}
+#fish img {
+	width:100%;
+	height:50px;
 }
 .bubble {
     width: 30px;
