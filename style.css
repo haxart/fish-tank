@@ -2,16 +2,16 @@
 
 /*X-Axis Movement*/
 @-webkit-keyframes moveX {
-  from { right: 0; } to { right: 750px; }
+  from { left: 0; } to { left: 750px; }
 }
 @-moz-keyframes moveX {
-  from { right: 0; } to { right: 750px; }
+  from { left: 0; } to { left: 750px; }
 }
 @-o-keyframes moveX {
-  from { right: 0; } to { right: 750px; }
+  from { left: 0; } to { left: 750px; }
 }
 @keyframes moveX {
-  from { right: 0; } to { right: 750px; }
+  from { left: 0; } to { left: 750px; }
 }
 /*Y-Axis Movement*/
 @-webkit-keyframes moveY {
