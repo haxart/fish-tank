@@ -68,6 +68,13 @@
 	display:block;
 	background-color:transparent;
 	position:absolute;
+	/*Flip Fish Image Horizontally*/
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
 	/*animations*/
 	-webkit-animation:
 	moveX 6s linear 0.4s infinite alternate,
@@ -85,7 +92,6 @@
 	moveX 6s linear 0.4s infinite alternate,
 	moveY 10s linear 0s infinite alternate;
 }
-
 .bubble {
     width: 30px;
     height: 30px;
