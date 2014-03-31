@@ -26,7 +26,7 @@ JS:
 
 Random:
 
-1. I kind of want to make a CSS animation of bubbles that bubble up and disapear every few seconds.
+1. ~~I kind of want to make a CSS animation of bubbles that bubble up and disapear every few seconds.~~
 
 2. Find some kind of background for the webpage, clean it up a bit.  Like a background image of a desk or something.
 
