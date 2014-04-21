@@ -20,34 +20,8 @@
     100% { top: -500px;}
 }
 
-/*X-Axis Movement*/
-@-webkit-keyframes moveX {
-  from { left: 0; } to { left: 750px; }
-}
-@-moz-keyframes moveX {
-  from { left: 0; } to { left: 750px; }
-}
-@-o-keyframes moveX {
-  from { left: 0; } to { left: 750px; }
-}
-@keyframes moveX {
-  from { left: 0; } to { left: 750px; }
-}
-/*Y-Axis Movement*/
-@-webkit-keyframes moveY {
-  from { top: 0; } to { top: 450px; }
-}
-@-moz-keyframes moveY {
-  from { top: 0; } to { top: 450px; }
-}
-@-o-keyframes moveY {
-  from { top: 0; } to { top: 450px; }
-}
-@keyframes moveY {
-  from { top: 0; } to { top: 450px; }
-}
 /*Styles*/
-.container {
+.fishtank-container {
 	width:800px;
 	height:500px;
 	margin:0 auto;
@@ -60,38 +34,16 @@
 	border-top:30px solid #585858;
 	box-shadow: inset 0 0 40px #5EBCF2;
 }
-#fish {
+.fish {
 	width:50px;
 	height:50px;
 	background-size:100%;
 	display:block;
 	background-color:transparent;
 	position:absolute;
-	/*Flip Fish Image Horizontally*/
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-	filter: FlipH;
-	-ms-filter: "FlipH";
-	/*animations*/
-	-webkit-animation:
-	moveX 6s linear 0.4s infinite alternate,
-	moveY 10s linear 0s infinite alternate;
-	
-	-moz-animation: 
-	moveX 6s linear 0.4s infinite alternate,
-	moveY 10s linear 0s infinite alternate;
-
-	-o-animation:
-	moveX 6s linear 0.4s infinite alternate,
-	moveY 10s linear 0s infinite alternate;
-
-	animation:
-	moveX 6s linear 0.4s infinite alternate,
-	moveY 10s linear 0s infinite alternate;
+    cursor:pointer;
 }
-#fish img {
+.fish img {
 	width:100%;
 	height:50px;
 }
