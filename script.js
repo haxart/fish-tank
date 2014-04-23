@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	newPosition();
 	animateFish();
 
 	// fish movement
@@ -31,7 +30,7 @@ $(document).ready(function(){
 
 		var greatest = x > y ? x : y;
 
-		var speedModifier = 0.11;
+		var speedModifier = 0.13;
 
 		var speed = Math.ceil(greatest/speedModifier);
 
@@ -39,11 +38,9 @@ $(document).ready(function(){
 	}
 
 	// clone fish
-	document.getElementById('fish').onclick = function() {
-	var fish = document.getElementById('fish');
-    var clone = fish.cloneNode(true); // "deep" clone
-    // get parent node, append fish to it.
-    fish.parentNode.appendChild(clone);
-	};
+	$('.fish').click(function() {
+		var node = $('.fish');
+		$('.fishtank-container').append(node[0].cloneNode(true))
+	})
 
 });
