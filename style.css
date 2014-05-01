@@ -1,16 +1,26 @@
 /*CSS Keyframes*/
 
+/* Shark Animation */
+@-webkit-keyframes sharkAnimation {
+    0%   {left: 0%;}
+    50%  {left: 80%;}
+    100% {left: 0%;}
+}
+@-moz-keyframes sharkAnimation {
+    0%   {left: 0%;}
+    50%  {left: 80%;}
+    100% {left: 0%;}
+}
+@-o-keyframes sharkAnimation {
+    0%   {left: 0%;}
+    50%  {left: 80%;}
+    100% {left: 0%;}
+}
 /* BUBBLES */
 @-webkit-keyframes bubbles { 
     0% { top: 500px;}
     100% { top: -500px;}
 }
-
-@-webkit-keyframes sideWays { 
-    0% { margin-left:0px;}
-    100% { margin-left:50px;}
-}
-
 @-moz-keyframes bubbles {     
     0% { top: 500px;}
     100% { top: -500px;}
@@ -47,6 +57,30 @@
 	width:100%;
 	height:50px;
 }
+.shark {
+    width:180px;
+    height:180px;
+    background-size:100%;
+    display:block;
+    background-color:transparent;
+    position:absolute;
+    cursor:pointer;
+    -webkit-animation: sharkAnimation 14s  infinite;
+    -moz-animation: sharkAnimation 14s  infinite;
+    -o-animation: sharkAnimation 14s  infinite;
+    animation: sharkAnimation 14s  infinite;
+    /* Flip Shark At Start Of Animation */
+    // -moz-transform: scaleX(-1);
+    // -webkit-transform: scaleX(-1);
+    // -o-transform: scaleX(-1);
+    // transform: scaleX(-1);
+    // -ms-filter: fliph; /*IE*/
+    // filter: fliph; /*IE*/
+}
+.shark img {
+    width:100%;
+    height:100px;
+}
 .bubble {
     width: 30px;
     height: 30px;
@@ -67,6 +101,7 @@
     -moz-animation: bubbles 15s linear infinite;
     -o-animation: bubbles 15s linear infinite;
 }
+
 .bubble.x2 {
     left: 200px;
     -webkit-transform: scale(0.6);
