@@ -1,17 +1,19 @@
 $(document).ready(function(){
+	'use strict';
 	animateFish();
 
-	// fish movement
 	function newPosition() {
 
+		// dimensions of tank minus size of fish
 		var tankHeight = $('.fishtank-container').height() - 50,
 		tankWidth = $('.fishtank-container').width() - 50,
-
+		
 		newTankHeight = Math.ceil(Math.random() * tankHeight),
 		newTankWidth = Math.ceil(Math.random() * tankWidth );
 
 		return [newTankHeight, newTankWidth];
 	}
+
 	function animateFish() {
 
 		var newPos = newPosition();
@@ -40,7 +42,7 @@ $(document).ready(function(){
 	// clone fish
 	$('.fish').click(function() {
 		var node = $('.fish');
-		$('.fishtank-container').append(node[0].cloneNode(true))
-	})
+		$('.fishtank-container').append(node[0].cloneNode(true));
+	});
 
 });
